@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+.calculator {
+    background: #70cce6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.display {
+    width: 93%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #202020;
+    color:white;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button.operator {
+    background: #e0f7fa;
+    color: black;
+}
+button.operator:hover {
+    background: #b2ebf2;
+    font-weight: bold;
+}
+button.number {
+    background: white;
+    color: black;
+}
+button.number:hover {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+button.equals,.clear {
+    background: #6c63ff;
+    color: white;
+}
+button.equals:hover,.clear:hover {
+    background: #5750d9;
+    font-weight: bold;
+}
+button.alclear {
+    background: #ff7043;
+    color: white;
+    grid-column: span 4;
+}
+button.alclear:hover {
+    background: #ff5722;
+    font-weight: bold;
+}
